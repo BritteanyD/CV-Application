@@ -16,17 +16,21 @@
 }
 
 .home-profession {
-  font-size: var(--normal-font-size);
+  font-size: var(--h2-font-size);
 }
 
 .home-info {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   gap: 2rem;
 }
 
-.profile-descript {
+.profile-descript{
     text-align: center;
+}
+
+p {
+  font-size: var(--normal-font-size);
 }

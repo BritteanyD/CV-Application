@@ -10,25 +10,10 @@ const PersonalSkills = () => {
           <li className="skills-name">
             <span className="skills-cirlce"></span>Html
           </li>
-          <li className="skills-name">
-            <span className="skills-cirlce"></span>Css
-          </li>
-          <li className="skills-name">
-            <span className="skills-cirlce"></span>JavaScript
-          </li>
-          <li className="skills-name">
-            <span className="skills-cirlce"></span>Python
-          </li>
         </ul>
         <ul className="skills-data">
           <li className="skills-name">
             <span className="skills-cirlce"></span>React
-          </li>
-          <li className="skills-name">
-            <span className="skills-cirlce"></span>C#
-          </li>
-          <li className="skills-name">
-            <span className="skills-cirlce"></span>Java
           </li>
         </ul>
       </div>

@@ -1,38 +1,12 @@
-.education-content{
-    display: flex;
-    justify-content: center;
+.education-content {
+  display: flex;
+  justify-content: center;
 }
-
-.education-time{
-    padding-right: 1rem;
-}
-
-.education-studies{
-    padding-right: 10px;
-    font-size: var(--small-font-size);
-    color: var(--title-color);
-}
-
-.education-rounder{
-    position: relative;
-    display: block;
-    width: 16px;
-    height: 16px;
-    background-color: var(--text-color-light);
-    border-radius: 50%;
-    margin-top: 1.2rem;
-}
-
 .education-data {
-    gap: .5rem;
+  gap: 0.5rem;
 }
 
-.education-title{
-    font-size: var(--h3-font-size);
+.education-title {
+  font-size: var(--h3-font-size);
 }
-
-.education-year{
-    font-size: var(--smaller-font-size);
-}
-
 

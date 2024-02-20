@@ -1,24 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 :root {
-  --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --title-color: #0b0a0a;
-  --text-color: #403a3a;
-  --text-color-light: #707070;
-  --container-color: #fafafa;
-  --container-color-alt: #f0efef;
-  --body-color: #fcfcfc;
+  color: #e7e2e2;
+  background-color: #323232;
 
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.875rem;
-  --smaller-font-size: 0.813rem;
+  font: "Poppins", sans-serif;
+  --h1-font-size: 70px;
+  --h2-font-size: 45px;
+  --h3-font-size: 20px;
+  --normal-font-size: 16px;
 
   /*========== Font weight ==========*/
   --font-medium: 500;
@@ -34,22 +27,12 @@
   --z-fixed: 100;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-/*========== Variables Dark theme ==========*/
-
-/*========== Button Dark/Light ==========*/
-
-/*========== CLASS CSS ==========*/
 .section {
-  padding: 1.5rem 0;
+  padding: 1.5rem;
 }
 
 .section-title {
   font-size: var(--h2-font-size);
-  color: var(--title-color);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
   letter-spacing: 0.35rem;
