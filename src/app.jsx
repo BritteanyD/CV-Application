@@ -1,9 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App.jsx'
+import React from "react";
+import PersonalInfo from "./Components/Info";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-  )
+const App = () => {
+  return (
+    <main className="1-main bd-container">
+      <div className="resume">
+        <PersonalInfo />
+      </div>
+    </main>
+  );
+};
+
+export default App;
