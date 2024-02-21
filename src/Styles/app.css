@@ -1,0 +1,8 @@
+.main-container {
+    display: flex;
+}
+
+.form-container {
+    border: solid 5px red;
+    margin-right: 40px;
+}

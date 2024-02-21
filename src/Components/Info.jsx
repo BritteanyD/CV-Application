@@ -4,8 +4,8 @@ import "../Styles/Info.css";
 const PersonalInfo = () => {
   return (
     <div className="home" id="home">
-      <div className="home-container section bd-grid">
-        <div className="home-data bd-grid">
+      <div className="home-container section">
+        <div className="home-data">
           <h1 className="home-title">YOUR NAME</h1>
           <h3 className="home-profession">Web Developer</h3>
         </div>
