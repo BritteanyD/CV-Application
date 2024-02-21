@@ -1,12 +1,14 @@
 import React from "react";
 import "../Styles/Info.css";
 
-const PersonalInfo = (resumeData) => {
+const Info = ({resumeData, name}) => {
+  console.log("resumeData", resumeData)
+  console.log("name", name)
   return (
     <div className="home" id="home">
       <div className="home-container section">
         <div className="home-data">
-          <h1 className="home-title">{resumeData.name}</h1>
+          <h1 className="home-title">{name}</h1>
           <h3 className="home-profession">{resumeData.profession}</h3>
         </div>
         <div className="home-info">
@@ -16,12 +18,10 @@ const PersonalInfo = (resumeData) => {
         </div>
       </div>
       <div className="profile" id="profile">
-        <p className="profile-descript">
-        {resumeData.summary}
-        </p>
+        <p className="profile-descript">{resumeData.summary}</p>
       </div>
     </div>
   );
 };
 
-export default PersonalInfo;
+export default Info;

@@ -1,7 +1,15 @@
 import React from "react";
 import "../Styles/Form.css";
 
-const PersonalForm = ({ resumeData, onFormChange }) => {
+const Form = ({
+  resumeData,
+  onFormChange,
+  onEdit,
+  onSave,
+  isEditing,
+  setName,
+  name
+}) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     onFormChange(name, value);
@@ -17,8 +25,8 @@ const PersonalForm = ({ resumeData, onFormChange }) => {
           id="name"
           name="name"
           placeholder="John Smith"
-          value={resumeData.name}
-          onChange={handleChange}
+          value={name}
+          onChange={e => setName(e.target.value)}
         />
       </div>
       <div className="form-group">
@@ -120,8 +128,17 @@ const PersonalForm = ({ resumeData, onFormChange }) => {
           onChange={handleChange}
         />
       </div>
+      <div className="button-container">
+        <div className="buttons">
+        {isEditing ? (
+          <button onClick={onSave}>SAVE</button>
+        ) : (
+          <button onClick={onEdit}>EDIT</button>
+        )}
+        </div>
+      </div>
     </div>
   );
 };
 
-export default PersonalForm;
+export default Form;

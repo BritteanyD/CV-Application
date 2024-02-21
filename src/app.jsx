@@ -1,39 +1,59 @@
-import React, {useState} from "react";
-import PersonalInfo from "./Components/Info";
+import React, { useState } from "react";
+import Info from "./Components/Info";
 import PersonalSkills from "./Components/Skills";
 import PersonalExp from "./Components/Experience";
 import PersonalEdu from "./Components/Education";
-import PersonalForm from "./Components/Form";
+import Form from "./Components/Form";
 import "./Styles/app.css";
 
 const App = () => {
-  const[resumeData, setResumeData] = useState({
-    name:"",
+  const initialResumeData = {
     profession: "",
-    email:"",
+    email: "",
     phone: "",
     web: "",
     summary: "",
     skill: "",
     experience: "",
     description: "",
-    education: ""
-  });
+    education: "",
+  };
+
+  const [name, setName] = useState('Taylor');
+
+  const [resumeData, setResumeData] = useState(initialResumeData);
+  const [isEditing, setIsEditing] = useState(false);
 
   const handleFormChange = (fieldName, value) => {
-    setResumeData(prevData => ({
+    setResumeData((prevData) => ({
       ...prevData,
-      [fieldName]: value
+      [fieldName]: value,
     }));
-  }
+  };
+
+  const handleEdit = () => {
+    setIsEditing(true);
+  };
+
+  const handleSave = () => {
+    setIsEditing(false);
+  };
 
   return (
     <main className=" main-container">
       <div className="form-container">
-        <PersonalForm resumeData={resumeData} onFormChange={handleFormChange}/>
+        <Form
+          resumeData={resumeData}
+          onFormChange={handleFormChange}
+          isEditing={isEditing}
+          onEdit={handleEdit}
+          onSave={handleSave}
+          setName={setName}
+          name={name}
+        />
       </div>
       <div className="resume">
-        <PersonalInfo resumeData={resumeData} />
+        <Info resumeData={resumeData} name={name}/>
         <PersonalSkills resumeData={resumeData} />
         <PersonalExp resumeData={resumeData} />
         <PersonalEdu resumeData={resumeData} />
