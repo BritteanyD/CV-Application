@@ -17,8 +17,8 @@ const PersonalForm = ({ resumeData, onFormChange }) => {
           id="name"
           name="name"
           placeholder="John Smith"
-          // value={resumeData.name}
-          // onChange={handleChange}
+          value={resumeData.name}
+          onChange={handleChange}
         />
       </div>
       <div className="form-group">
@@ -28,8 +28,8 @@ const PersonalForm = ({ resumeData, onFormChange }) => {
           id="profession"
           name="profession"
           placeholder="Web Developer"
-          // value={resumeData.profession}
-          // onChange={handleChange}
+          value={resumeData.profession}
+          onChange={handleChange}
         />
       </div>
       <div className="form-group">
@@ -39,8 +39,8 @@ const PersonalForm = ({ resumeData, onFormChange }) => {
           id="email"
           name="email"
           placeholder="John.Smith@gmail.com"
-          // value={resumeData.email}
-          // onChange={handleChange}
+          value={resumeData.email}
+          onChange={handleChange}
         />
       </div>
       <div className="form-group">
@@ -50,8 +50,8 @@ const PersonalForm = ({ resumeData, onFormChange }) => {
           id="phone"
           name="phone"
           placeholder="222-222-2222"
-          // value={resumeData.phone}
-          // onChange={handleChange}
+          value={resumeData.phone}
+          onChange={handleChange}
         />
       </div>
       <div className="form-group">
@@ -61,8 +61,8 @@ const PersonalForm = ({ resumeData, onFormChange }) => {
           id="web"
           name="web"
           placeholder="www.MyLink.com"
-          // value={resumeData.web}
-          // onChange={handleChange}
+          value={resumeData.web}
+          onChange={handleChange}
         />
       </div>
       <div className="form-group">
@@ -72,8 +72,8 @@ const PersonalForm = ({ resumeData, onFormChange }) => {
           id="summary"
           name="summary"
           placeholder="I am a skilled front-end dev..."
-          // value={resumeData.summary}
-          // onChange={handleChange}
+          value={resumeData.summary}
+          onChange={handleChange}
         />
       </div>
       <div className="form-group">
@@ -82,9 +82,9 @@ const PersonalForm = ({ resumeData, onFormChange }) => {
           type="text"
           id="skill"
           name="skill"
-          placeholder="HTML CSS JavaScript"
-          // value={resumeData.skill}
-          // onChange={handleChange}
+          placeholder="HTML, CSS, JavaScript"
+          value={resumeData.skill}
+          onChange={handleChange}
         />
       </div>
       <div className="form-group">
@@ -94,8 +94,8 @@ const PersonalForm = ({ resumeData, onFormChange }) => {
           id="experience"
           name="experience"
           placeholder="Junior Dev at Disney from 2010-2013"
-          // value={resumeData.experience}
-          // onChange={handleChange}
+          value={resumeData.experience}
+          onChange={handleChange}
         />
       </div>
       <div className="form-group">
@@ -105,8 +105,19 @@ const PersonalForm = ({ resumeData, onFormChange }) => {
           id="description"
           name="description"
           placeholder="I utilized and solved..."
-          // value={resumeData.description}
-          // onChange={handleChange}
+          value={resumeData.description}
+          onChange={handleChange}
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="education">Education Info:</label>
+        <textarea
+          type="text"
+          id="education"
+          name="education"
+          placeholder="Master Degree from University of Everything 2020-2030"
+          value={resumeData.education}
+          onChange={handleChange}
         />
       </div>
     </div>

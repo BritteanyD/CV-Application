@@ -9,10 +9,6 @@
     text-align: center;
 }
 
-.exp-data {
-    gap: .5rem;
-}
-
 .exp-title{
     font-size: var(--h3-font-size);
 }

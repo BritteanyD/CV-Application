@@ -2,9 +2,6 @@
   display: flex;
   justify-content: center;
 }
-.education-data {
-  gap: 0.5rem;
-}
 
 .education-title {
   font-size: var(--h3-font-size);
