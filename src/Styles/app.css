@@ -1,5 +1,6 @@
 .main-container {
     display: flex;
+    gap: 400px;
 }
 
 .form-container {

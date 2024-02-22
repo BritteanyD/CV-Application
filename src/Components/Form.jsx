@@ -1,15 +1,7 @@
 import React from "react";
 import "../Styles/Form.css";
 
-const Form = ({
-  resumeData,
-  onFormChange,
-  onEdit,
-  onSave,
-  isEditing,
-  setName,
-  name
-}) => {
+const Form = ({ resumeData, onFormChange}) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     onFormChange(name, value);
@@ -25,8 +17,8 @@ const Form = ({
           id="name"
           name="name"
           placeholder="John Smith"
-          value={name}
-          onChange={e => setName(e.target.value)}
+          value={resumeData.name}
+          onChange={handleChange}
         />
       </div>
       <div className="form-group">
@@ -127,15 +119,6 @@ const Form = ({
           value={resumeData.education}
           onChange={handleChange}
         />
-      </div>
-      <div className="button-container">
-        <div className="buttons">
-        {isEditing ? (
-          <button onClick={onSave}>SAVE</button>
-        ) : (
-          <button onClick={onEdit}>EDIT</button>
-        )}
-        </div>
       </div>
     </div>
   );

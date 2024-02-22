@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/Experience.css";
 
-const PersonalExp = (resumeData) => {
+const Exp = ({resumeData}) => {
   return (
     <div className="exp-section" id="exp">
       <h2 className="section-title">Experience</h2>
@@ -17,4 +17,4 @@ const PersonalExp = (resumeData) => {
   );
 };
 
-export default PersonalExp;
+export default Exp;

@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/Education.css";
 
-const PersonalEdu = (resumeData) => {
+const Edu = ({resumeData}) => {
   return (
     <div className="education" id="education">
       <h2 className="section-title">Education</h2>
@@ -14,4 +14,4 @@ const PersonalEdu = (resumeData) => {
   );
 };
 
-export default PersonalEdu;
+export default Edu;

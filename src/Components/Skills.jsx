@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/Skills.css";
 
-const PersonalSkills = ({ resumeData }) => {
+const Skills = ({ resumeData }) => {
   return (
     <div className="skills-section" id="skills">
       <h2 className="section-title">Skills</h2>
@@ -12,4 +12,4 @@ const PersonalSkills = ({ resumeData }) => {
   );
 };
 
-export default PersonalSkills;
+export default Skills;

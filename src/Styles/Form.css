@@ -18,21 +18,8 @@ label {
     font-size: 18px;
 }
 
-input {
+input, textarea {
+    display: flex;
     padding: 4px;
     font-size: 18px;
-}
-
-button {
-    padding: 10px 30px;
-    font-size: 16px;
-    font-weight: 800;
-    background-color: rgb(105, 192, 194);
-    border-radius: 8px;
-}
-
-.button-container {
-    display:flex;
-    justify-content: center;
-    margin-bottom: 20px;
 }

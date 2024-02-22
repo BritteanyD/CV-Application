@@ -1,14 +1,13 @@
 import React from "react";
 import "../Styles/Info.css";
 
-const Info = ({resumeData, name}) => {
-  console.log("resumeData", resumeData)
-  console.log("name", name)
+const Info = ({resumeData}) => {
+  
   return (
     <div className="home" id="home">
       <div className="home-container section">
         <div className="home-data">
-          <h1 className="home-title">{name}</h1>
+          <h1 className="home-title">{resumeData.name}</h1>
           <h3 className="home-profession">{resumeData.profession}</h3>
         </div>
         <div className="home-info">
